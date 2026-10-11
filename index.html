@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shamil Prematunga · Senior Software Engineer</title>
+  <meta name="description" content="Shamil Dilshan Prematunga, Senior Software Engineer building scalable, cloud-native and AI-powered platforms. MSc in Data Science & AI (reading) at the University of Moratuwa, researching security in LLM-generated code." />
+  <meta name="author" content="Shamil Dilshan Prematunga" />
+  <meta name="theme-color" content="#0a0c10" />
+  <link rel="canonical" href="https://shamilprematunga.me/" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shamilprematunga.me/" />
+  <meta property="og:title" content="Shamil Prematunga · Senior Software Engineer" />
+  <meta property="og:description" content="Senior Software Engineer building scalable, cloud-native and AI-powered platforms. Researching security in LLM-generated code." />
+  <meta property="og:image" content="https://shamilprematunga.me/assets/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shamil Prematunga · Senior Software Engineer" />
+  <meta name="twitter:description" content="Senior Software Engineer building scalable, cloud-native and AI-powered platforms. Researching security in LLM-generated code." />
+  <meta name="twitter:image" content="https://shamilprematunga.me/assets/og-image.svg" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shamil Dilshan Prematunga",
+    "jobTitle": "Senior Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "H2O.ai" },
+    "url": "https://shamilprematunga.me",
+    "address": { "@type": "PostalAddress", "addressLocality": "Horana", "addressCountry": "Sri Lanka" },
+    "alumniOf": "University of Moratuwa",
+    "sameAs": ["https://github.com/SDPcodes"],
+    "knowsAbout": ["Go", "Distributed Systems", "Kubernetes", "AWS", "LLM Orchestration", "RAG", "Vector Search", "AI Security"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="brand" aria-label="Home">
+        <img class="brand__mark" src="assets/profile.jpg" alt="Shamil Prematunga" />
+        <span class="brand__text">Shamil Prematunga</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#opensource">Open&nbsp;Source</a>
+        <a href="#certifications">Certs</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow"><span class="pulse"></span> Available for high-impact engineering &amp; research collaborations</p>
+          <h1 class="hero__name">Shamil Dilshan<br />Prematunga</h1>
+          <p class="hero__role">Senior Software Engineer <span class="sep">/</span> MSc in Data Science &amp; AI <span class="muted">(reading)</span></p>
+          <p class="hero__bio">
+            I design and build scalable, cloud-native platforms: distributed backends, enterprise tooling,
+            and AI-powered services built on LLM orchestration, RAG and vector search. Currently leading
+            engineering at <strong>H2O.ai</strong>, and researching how to make AI-generated code secure.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View my work <span aria-hidden="true">→</span></a>
+            <a href="assets/Shamil_Prematunga_CV.pdf" class="btn btn--ghost" download>Download CV</a>
+          </div>
+          <div class="hero__socials">
+            <a href="https://github.com/SDPcodes" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/shamil-prematunga-139b51158/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <a href="mailto:shamildilshan.b@gmail.com" aria-label="Email">Email</a>
+          </div>
+        </div>
+
+        <aside class="hero__card" aria-label="Profile summary">
+          <div class="profilecard">
+            <div class="profilecard__top">
+              <img class="profilecard__avatar" src="assets/profile.jpg" alt="Shamil Prematunga" />
+              <div>
+                <p class="profilecard__name">Shamil Prematunga</p>
+                <p class="profilecard__sub">Senior Software Engineer</p>
+              </div>
+            </div>
+            <ul class="profilecard__meta">
+              <li><span class="k">Location</span><span class="v">Horana, Sri Lanka</span></li>
+              <li><span class="k">Company</span><span class="v">H2O.ai</span></li>
+              <li><span class="k">Focus</span><span class="v">Full stack · AI · Security</span></li>
+              <li><span class="k">Research</span><span class="v">LLM code security</span></li>
+            </ul>
+            <div class="profilecard__foot">
+              <code>$ whoami → builder of resilient systems</code>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Stats -->
+      <div class="container">
+        <div class="stats">
+          <div class="stat">
+            <span class="stat__num" data-count="6" data-suffix="+">0</span>
+            <span class="stat__label">Years of engineering</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="4">0</span>
+            <span class="stat__label">Production platforms owned</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="10" data-suffix="+">0</span>
+            <span class="stat__label">Core languages &amp; tools</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num stat__num--text">MSc</span>
+            <span class="stat__label">Data Science &amp; AI, UoM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">01</span>
+          <h2 class="section__title">About</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__lead">
+            <p>
+              I'm a Senior Software Engineer with <strong>6+ years</strong> designing and building scalable,
+              cloud-native and enterprise platforms. My core is backend engineering and distributed
+              systems (Go, gRPC, PostgreSQL, Kubernetes and AWS), with full-stack reach across
+              TypeScript and React when a product needs it end to end.
+            </p>
+            <p>
+              At H2O.ai I own mission-critical platforms, drive architecture decisions, and build
+              AI-powered capabilities: multi-provider LLM integration, RAG pipelines, vector search,
+              and streaming APIs deployed on Kubernetes. I care about systems that are secure,
+              observable and genuinely production-grade.
+            </p>
+            <p>
+              Alongside engineering, I'm reading for an <strong>MSc in Data Science &amp; Artificial
+              Intelligence</strong> at the University of Moratuwa, where my research tackles the security
+              of LLM-generated code through automated red teaming.
+            </p>
+          </div>
+          <div class="about__side">
+            <h3 class="about__sideTitle">Education</h3>
+            <div class="edu">
+              <p class="edu__degree">M.Sc. in Data Science &amp; Artificial Intelligence</p>
+              <p class="edu__meta">University of Moratuwa <span class="dot">·</span> Jan 2026 – Present</p>
+              <p class="edu__note">Reading. Research on security of LLM-generated web application code.</p>
+            </div>
+            <div class="edu">
+              <p class="edu__degree">B.Sc. (Hons) Electronic &amp; Telecommunication Engineering</p>
+              <p class="edu__meta">University of Moratuwa <span class="dot">·</span> 2015 – 2020</p>
+              <p class="edu__note">GPA 3.55/4.2, Second Class Upper. FYP: safety enhancement of pedestrian crossings.</p>
+            </div>
+            <div class="about__facts">
+              <span class="chip">🏓 Table Tennis</span>
+              <span class="chip">♟ Chess</span>
+              <span class="chip">🎥 Tekcerpts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STACK ===== -->
+    <section class="section section--alt" id="stack">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">02</span>
+          <h2 class="section__title">Tech stack</h2>
+        </div>
+        <div class="stack__grid">
+          <div class="stackgroup">
+            <h3>Languages</h3>
+            <div class="pills">
+              <span class="pill">Go</span><span class="pill">TypeScript</span>
+              <span class="pill">Python</span><span class="pill">SQL</span>
+            </div>
+          </div>
+          <div class="stackgroup">
+            <h3>Backend &amp; APIs</h3>
+            <div class="pills">
+              <span class="pill">gRPC</span><span class="pill">REST</span>
+              <span class="pill">SSE Streaming</span><span class="pill">Protocol Buffers</span>
+              <span class="pill">OIDC / JWT</span>
+            </div>
+          </div>
+          <div class="stackgroup">
+            <h3>Cloud &amp; Infra</h3>
+            <div class="pills">
+              <span class="pill">AWS</span><span class="pill">Docker</span>
+              <span class="pill">Kubernetes</span><span class="pill">Helm</span>
+              <span class="pill">GitHub Actions</span><span class="pill">EKS</span>
+            </div>
+          </div>
+          <div class="stackgroup">
+            <h3>AI / ML</h3>
+            <div class="pills">
+              <span class="pill">LLM Orchestration</span><span class="pill">RAG</span>
+              <span class="pill">Vector Search</span><span class="pill">Prompt Engineering</span>
+              <span class="pill">H2O Wave</span>
+            </div>
+          </div>
+          <div class="stackgroup">
+            <h3>Data</h3>
+            <div class="pills">
+              <span class="pill">PostgreSQL</span><span class="pill">DynamoDB</span>
+              <span class="pill">AWS Athena</span><span class="pill">S3</span>
+              <span class="pill">SQS</span>
+            </div>
+          </div>
+          <div class="stackgroup">
+            <h3>Frontend</h3>
+            <div class="pills">
+              <span class="pill">React</span><span class="pill">TypeScript</span>
+              <span class="pill">MUI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">03</span>
+          <h2 class="section__title">Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl">
+            <div class="tl__dot"></div>
+            <div class="tl__body">
+              <div class="tl__head">
+                <h3 class="tl__role">Senior Software Engineer</h3>
+                <span class="tl__date">Feb 2025 – Present</span>
+              </div>
+              <p class="tl__org">H2O.ai</p>
+              <ul class="tl__points">
+                <li>Own and lead mission-critical cloud-native platforms, driving architecture, technical execution and delivery across enterprise products while mentoring engineers and contributing hands-on across the stack.</li>
+                <li>Build AI-powered platform capabilities with Go, REST/SSE streaming APIs, multi-provider LLM integration, RAG pipelines, vector search, automated documentation ingestion, and OIDC/JWT authentication.</li>
+                <li>Hands-on with LLM orchestration, prompt engineering, context-window optimization, and production deployment on AWS using Docker, Kubernetes, Helm and CI/CD.</li>
+                <li>Align engineering with business goals, improve platform scalability, and deliver secure, production-grade systems.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl">
+            <div class="tl__dot"></div>
+            <div class="tl__body">
+              <div class="tl__head">
+                <h3 class="tl__role">Software Engineer</h3>
+                <span class="tl__date">Mar 2022 – Feb 2025</span>
+              </div>
+              <p class="tl__org">H2O.ai</p>
+              <ul class="tl__points">
+                <li>Built scalable web apps using Python, H2O Wave, React, TypeScript, Go, gRPC, Postgres, DynamoDB, Athena and AWS.</li>
+                <li>Mentored interns, supported sprint planning, and gained hands-on experience with Jenkins pipelines.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl">
+            <div class="tl__dot"></div>
+            <div class="tl__body">
+              <div class="tl__head">
+                <h3 class="tl__role">Research Engineer</h3>
+                <span class="tl__date">Jul 2020 – Mar 2022</span>
+              </div>
+              <p class="tl__org">Dialog – University of Moratuwa Laboratory</p>
+              <ul class="tl__points">
+                <li>Worked on an open-source 5G cellular network implementation project.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tl">
+            <div class="tl__dot"></div>
+            <div class="tl__body">
+              <div class="tl__head">
+                <h3 class="tl__role">Software Engineer</h3>
+                <span class="tl__date">Feb 2020 – Jul 2020</span>
+              </div>
+              <p class="tl__org">Applova Inc.</p>
+              <ul class="tl__points">
+                <li>Built a restaurant-based web application.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">04</span>
+          <h2 class="section__title">Featured projects</h2>
+        </div>
+        <p class="section__lead">Production platforms and products I've designed, owned and shipped.</p>
+
+        <div class="filters" role="tablist" aria-label="Filter projects">
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="ai">AI</button>
+          <button class="filter" data-filter="platform">Platform</button>
+          <button class="filter" data-filter="data">Data</button>
+          <button class="filter" data-filter="security">Security</button>
+          <button class="filter" data-filter="consulting">Consulting</button>
+        </div>
+
+        <div class="projects">
+          <article class="project" data-cat="ai platform">
+            <div class="project__top">
+              <span class="project__no">01</span>
+              <span class="project__cat">AI Platform</span>
+            </div>
+            <h3 class="project__title">Platform Assistant</h3>
+            <p class="project__meta">Jul 2026 – Present</p>
+            <p class="project__desc">
+              An AI-powered code generation service that translates natural language into executable code and
+              configuration across multiple products and languages. Built end to end with streaming LLM
+              responses, RAG over product documentation, vector retrieval, authentication, and Kubernetes
+              deployment.
+            </p>
+            <div class="tags">
+              <span>Go</span><span>REST + SSE</span><span>Multi-provider LLMs</span><span>RAG</span>
+              <span>Vector Search</span><span>OIDC/JWT</span><span>Docker + K8s + Helm</span><span>AWS</span>
+            </div>
+          </article>
+
+          <article class="project" data-cat="platform security">
+            <div class="project__top">
+              <span class="project__no">02</span>
+              <span class="project__cat">Platform</span>
+            </div>
+            <h3 class="project__title">Admin Center</h3>
+            <p class="project__meta">Mar 2022 – Present</p>
+            <p class="project__desc">
+              A production-grade, cloud-native platform for managing and administering environments, covering
+              user management, security, billing tracking, observability, and identity management across
+              enterprise deployments.
+            </p>
+            <div class="tags">
+              <span>Go</span><span>TypeScript</span><span>gRPC + REST</span><span>Protocol Buffers</span>
+              <span>PostgreSQL (RDS)</span><span>Docker + K8s</span><span>GitHub Actions</span>
+            </div>
+          </article>
+
+          <article class="project" data-cat="data">
+            <div class="project__top">
+              <span class="project__no">03</span>
+              <span class="project__cat">Data</span>
+            </div>
+            <h3 class="project__title">Insights Dashboard</h3>
+            <p class="project__meta">Apr 2024 – Present</p>
+            <p class="project__desc">
+              An enterprise-grade internal analytics platform that tracks telemetry analytics across all
+              environments, giving teams a single lens on usage and system health.
+            </p>
+            <div class="tags">
+              <span>Go</span><span>TypeScript</span><span>Python</span><span>AWS Athena</span>
+              <span>DynamoDB</span><span>S3</span><span>Docker + K8s + Helm</span><span>GitHub Actions</span>
+            </div>
+          </article>
+
+          <article class="project" data-cat="security platform">
+            <div class="project__top">
+              <span class="project__no">04</span>
+              <span class="project__cat">Security</span>
+            </div>
+            <h3 class="project__title">Access Manager</h3>
+            <p class="project__meta">Apr 2025 – Present</p>
+            <p class="project__desc">
+              An internal access-control platform built from scratch. Team members request, approve and track
+              time-limited access to EKS clusters and AWS accounts with role-based permissions, real-time
+              notifications and a full audit trail, solving a real infrastructure-security problem.
+            </p>
+            <div class="tags">
+              <span>Go</span><span>gRPC-web</span><span>Protocol Buffers</span><span>AWS SDK</span>
+              <span>Slack Webhooks</span><span>TypeScript</span><span>MUI</span><span>DynamoDB</span>
+              <span>SQS</span><span>GitHub Actions</span>
+            </div>
+          </article>
+
+          <article class="project" data-cat="consulting">
+            <div class="project__top">
+              <span class="project__no">05</span>
+              <span class="project__cat">Consulting</span>
+            </div>
+            <h3 class="project__title">Plantation SaaS</h3>
+            <p class="project__meta">Forward Deployed Engineer <span aria-hidden="true">·</span> Sep 2026 – Oct 2026</p>
+            <p class="project__desc">
+              A one-month forward deployed engagement for a SaaS product built for the plantation sector.
+              I helped <strong>frame the product</strong> with stakeholders, shaping operational needs into
+              practical features and workflows, and <strong>coordinated the needful with the field teams</strong>
+              across solution design, implementation and rollout.
+            </p>
+            <div class="tags">
+              <span>Product framing</span><span>Stakeholder alignment</span><span>Field coordination</span>
+              <span>Solution design</span><span>Rollout</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESEARCH ===== -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">05</span>
+          <h2 class="section__title">MSc research</h2>
+        </div>
+
+        <div class="research research--single">
+          <div class="research__main">
+            <span class="research__badge">In progress · University of Moratuwa</span>
+            <h3 class="research__title">
+              Understanding Security Vulnerabilities in LLM-Generated Web Application Code
+            </h3>
+            <p class="research__subtitle">
+              A Red Teaming Approach to Characterising the Functional-Security Correctness Gap
+            </p>
+            <p class="research__abstract">
+              <strong>The area.</strong> Large Language Models such as GPT-4o, Claude and DeepSeek-Coder are
+              now widely used to generate web application code. My research sits where AI meets application
+              security: it studies how safe that generated code really is once it becomes a complete,
+              deployable web application rather than an isolated snippet.
+            </p>
+            <p class="research__abstract">
+              <strong>The gap I'm addressing.</strong> Code an LLM produces can pass every functional test and
+              still be insecure. Studies report that around <strong>68.8%</strong> of generated snippets break
+              security rules, while the share of real-world output that is both functional and secure stays
+              below <strong>6%</strong>. I call this divergence between "it works" and "it is safe" the
+              <em>functional-security correctness gap</em>, and my work characterises it through adaptive red
+              teaming so that AI-assisted development can be guided by evidence instead of assumption.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OPEN SOURCE ===== -->
+    <section class="section section--alt" id="opensource">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">06</span>
+          <h2 class="section__title">Open source &amp; experiments</h2>
+        </div>
+        <p class="section__lead">Public work and research code. More on <a href="https://github.com/SDPcodes" target="_blank" rel="noopener">github.com/SDPcodes</a>.</p>
+
+        <div class="repos">
+          <a class="repo" href="https://github.com/SDPcodes/llm-security-poc" target="_blank" rel="noopener">
+            <div class="repo__head">
+              <svg class="repo__icon" viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.25.25 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+              <span class="repo__name">llm-security-poc</span>
+            </div>
+            <p class="repo__desc">A proof-of-concept from my MSc research. GPT-4o generates full-stack apps under different prompting strategies, then each is run through a security pipeline: functional test, static analysis (Semgrep, CodeQL, LLM-as-judge), sandbox deployment and red teaming (OWASP ZAP plus scripted attacks).</p>
+            <div class="repo__tags"><span>JavaScript</span><span>GPT-4o</span><span>Semgrep</span><span>CodeQL</span><span>OWASP ZAP</span></div>
+          </a>
+
+          <a class="repo" href="https://github.com/SDPcodes/web-search-agent" target="_blank" rel="noopener">
+            <div class="repo__head">
+              <svg class="repo__icon" viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.25.25 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+              <span class="repo__name">web-search-agent</span>
+            </div>
+            <p class="repo__desc">An AI agent that autonomously searches the web and synthesises grounded answers to a user's query.</p>
+            <div class="repo__tags"><span>Python</span><span>LLM</span><span>Agents</span></div>
+          </a>
+
+          <a class="repo" href="https://github.com/SDPcodes/music-genre-classifier" target="_blank" rel="noopener">
+            <div class="repo__head">
+              <svg class="repo__icon" viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.25.25 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+              <span class="repo__name">music-genre-classifier</span>
+            </div>
+            <p class="repo__desc">Using Apache Spark to classify music by genre, with a train-then-serve ML pipeline.</p>
+            <div class="repo__tags"><span>Python</span><span>Apache Spark</span><span>ML</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS & AWARDS ===== -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">07</span>
+          <h2 class="section__title">Certifications &amp; awards</h2>
+        </div>
+
+        <div class="award">
+          <div class="award__medal" aria-hidden="true">
+            <span class="award__rank">8th</span>
+            <span class="award__place">place</span>
+          </div>
+          <div class="award__body">
+            <span class="award__tag">Competition · H2O.ai</span>
+            <h3 class="award__title">H2O Wildfire Challenge</h3>
+            <p class="award__meta">Team PSR <span class="dot">·</span> 2022</p>
+            <p class="award__desc">
+              Competed as <strong>Team PSR</strong> and placed 8th in the final round of H2O.ai's Wildfire
+              Challenge, building an AI application end to end with H2O Wave. Started from scratch and learned
+              a huge amount through the journey. Teammates: Ranush Wickramarathne and Pasan Dharmasiri.
+            </p>
+            <div class="tags"><span>H2O Wave</span><span>Machine Learning</span><span>AI</span></div>
+          </div>
+        </div>
+
+        <h3 class="certs__heading">Licenses &amp; certifications</h3>
+        <div class="certs">
+          <div class="certcard">
+            <p class="certcard__name">Generative AI Foundations</p>
+            <p class="certcard__meta"><span class="certcard__issuer">AWS Academy</span><span class="certcard__year">Jul 2026</span></p>
+          </div>
+          <div class="certcard">
+            <p class="certcard__name">Machine Learning for Natural Language Processing</p>
+            <p class="certcard__meta"><span class="certcard__issuer">AWS Academy</span><span class="certcard__year">Jul 2026</span></p>
+          </div>
+          <div class="certcard">
+            <p class="certcard__name">Machine Learning Foundations</p>
+            <p class="certcard__meta"><span class="certcard__issuer">AWS Academy</span><span class="certcard__year">Mar 2026</span></p>
+          </div>
+          <div class="certcard">
+            <p class="certcard__name">Data Engineering</p>
+            <p class="certcard__meta"><span class="certcard__issuer">AWS Academy</span><span class="certcard__year">Feb 2026</span></p>
+          </div>
+          <div class="certcard">
+            <p class="certcard__name">H2O AI Agents: From Theory to Practice</p>
+            <p class="certcard__meta"><span class="certcard__issuer">H2O.ai</span><span class="certcard__year">Feb 2026</span></p>
+          </div>
+          <div class="certcard">
+            <p class="certcard__name">Fundamentals of Accelerated Data Science</p>
+            <p class="certcard__meta"><span class="certcard__issuer">NVIDIA</span><span class="certcard__year">Feb 2026</span></p>
+          </div>
+          <div class="certcard">
+            <p class="certcard__name">h2oGPT Intro Course</p>
+            <p class="certcard__meta"><span class="certcard__issuer">H2O.ai</span><span class="certcard__year">Sep 2023</span></p>
+          </div>
+          <div class="certcard">
+            <p class="certcard__name">LLM Studio Overview</p>
+            <p class="certcard__meta"><span class="certcard__issuer">H2O.ai</span><span class="certcard__year">Jun 2023</span></p>
+          </div>
+          <div class="certcard">
+            <p class="certcard__name">Driverless AI Starter Course</p>
+            <p class="certcard__meta"><span class="certcard__issuer">H2O.ai</span><span class="certcard__year">Jun 2023</span></p>
+          </div>
+          <div class="certcard">
+            <p class="certcard__name">Encoder-Decoder Architecture</p>
+            <p class="certcard__meta"><span class="certcard__issuer">Google Cloud</span><span class="certcard__year">Jun 2023</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WRITING ===== -->
+    <section class="section section--alt" id="writing">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">08</span>
+          <h2 class="section__title">Writing &amp; content</h2>
+        </div>
+        <div class="content-cards">
+          <!-- TODO: replace with your real Tekcerpts YouTube channel URL -->
+          <a class="contentcard" href="https://www.youtube.com/@Tekcerpts" target="_blank" rel="noopener">
+            <span class="contentcard__kind">YouTube</span>
+            <h3 class="contentcard__title">Tekcerpts</h3>
+            <p class="contentcard__desc">Byte-sized tech explainers and engineering excerpts on my YouTube channel.</p>
+            <span class="contentcard__link">Watch on YouTube →</span>
+          </a>
+          <!-- TODO: replace with your real Medium profile URL -->
+          <a class="contentcard" href="https://medium.com/@shamildilshan.b" target="_blank" rel="noopener">
+            <span class="contentcard__kind">Medium</span>
+            <h3 class="contentcard__title">Engineering blog</h3>
+            <p class="contentcard__desc">Articles on backend engineering, cloud-native systems and AI, on Medium.</p>
+            <span class="contentcard__link">Read on Medium →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RECOMMENDATIONS ===== -->
+    <section class="section" id="recommendations">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">09</span>
+          <h2 class="section__title">Recommendations</h2>
+        </div>
+        <p class="section__lead">What colleagues and mentors have said on LinkedIn. Scroll for more.</p>
+
+        <div class="recos" tabindex="0" aria-label="Recommendations, scrollable">
+          <blockquote class="reco">
+            <p class="reco__text">Shamil was a highly motivated and talented intern who contributed effectively to our team for six months. He displayed strong dedication, ensuring high-quality and timely delivery of assigned tasks. Eager to learn, he proactively collaborated with engineers across the RF, Data Com, and Core teams, gaining end-to-end exposure to mobile network components. His willingness to take on new challenges and self-driven attitude made him a valuable team member. I highly recommend him for future opportunities.</p>
+            <footer class="reco__by">
+              <span class="reco__avatar" aria-hidden="true">KN</span>
+              <span class="reco__meta">
+                <span class="reco__name">Kumaraguru Niroshan</span>
+                <span class="reco__role">Vice Director <span class="dot">·</span> Managed Shamil directly <span class="dot">·</span> Jun 2025</span>
+              </span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="reco">
+            <p class="reco__text">I had the opportunity to work with Shamil for one year at Dialog, University of Moratuwa Research lab. We worked on several projects involving 5G technology and wireless communication. Shamil is always focused and determined to finish the allocated task before a given time frame, achieving the best results. He is a valued team member, and his dedication and ability to face issues with a positive attitude is remarkable for any team. Shamil will be a valuable asset for any company.</p>
+            <footer class="reco__by">
+              <span class="reco__avatar" aria-hidden="true">RW</span>
+              <span class="reco__meta">
+                <span class="reco__name">Ranush Wickramarathne</span>
+                <span class="reco__role">Automotive &amp; Full-Stack Software Developer <span class="dot">·</span> Same team <span class="dot">·</span> Jun 2021</span>
+              </span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="reco">
+            <p class="reco__text">I've had the pleasure of working with Shamil on multiple projects. He's a curious and quick learner. In addition, he's easy to trust, since he takes on responsibilities well.</p>
+            <footer class="reco__by">
+              <span class="reco__avatar" aria-hidden="true">PC</span>
+              <span class="reco__meta">
+                <span class="reco__name">Poorna Chathuranjana</span>
+                <span class="reco__role">Consultant R&amp;D Engineer (AI/ML) <span class="dot">·</span> Dec 2021</span>
+              </span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="reco">
+            <p class="reco__text">I've worked with Shamil on multiple telecommunication projects and he is well versed on the subject. A fast learner and committed to complete the scope undertaken.</p>
+            <footer class="reco__by">
+              <span class="reco__avatar" aria-hidden="true">DG</span>
+              <span class="reco__meta">
+                <span class="reco__name">Dinushika Gunasekera</span>
+                <span class="reco__role">Head of Smart Factory Innovations <span class="dot">·</span> Jul 2021</span>
+              </span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="reco">
+            <p class="reco__text">Shamil is one of the easiest people to work with. Very hardworking and a dedicated worker.</p>
+            <footer class="reco__by">
+              <span class="reco__avatar" aria-hidden="true">MG</span>
+              <span class="reco__meta">
+                <span class="reco__name">Mariathasan Gowrishankar</span>
+                <span class="reco__role">Tech Lead, Fintech &amp; Cloud-Native Platforms <span class="dot">·</span> Same team <span class="dot">·</span> Jun 2021</span>
+              </span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">10</span>
+          <h2 class="section__title">Get in touch</h2>
+        </div>
+        <div class="contact">
+          <div class="contact__lead">
+            <h3>Let's build something resilient.</h3>
+            <p>
+              Open to engineering roles, research collaboration, and consulting on backend, cloud-native
+              and AI platform work. The fastest way to reach me is email.
+            </p>
+            <a href="mailto:shamildilshan.b@gmail.com" class="btn btn--primary">Say hello <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="contact__links">
+            <a href="mailto:shamildilshan.b@gmail.com" class="contact__row">
+              <span class="contact__k">Email</span>
+              <span class="contact__v">shamildilshan.b@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/shamil-prematunga-139b51158/" target="_blank" rel="noopener" class="contact__row">
+              <span class="contact__k">LinkedIn</span>
+              <span class="contact__v">in/shamil-prematunga</span>
+            </a>
+            <a href="https://github.com/SDPcodes" target="_blank" rel="noopener" class="contact__row">
+              <span class="contact__k">GitHub</span>
+              <span class="contact__v">github.com/SDPcodes</span>
+            </a>
+            <div class="contact__row contact__row--static">
+              <span class="contact__k">Location</span>
+              <span class="contact__v">Horana, Sri Lanka</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">Shamil Prematunga</p>
+      <p class="footer__copy">© <span id="year">2026</span> Shamil Dilshan Prematunga. Built from scratch.</p>
+      <a href="#home" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
